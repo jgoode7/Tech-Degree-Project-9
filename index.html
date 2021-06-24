@@ -12,54 +12,28 @@
   </head>
 
   <body>
-    <header>
+    <header id="home">
         <nav class="navbar navbar-expand-md navbar-light bg-light">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <a class="nav-link" href="#contact">
+                <img class="rocket-icon" src="img/rocket.svg" alt="rocket">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
               <ul class="navbar-nav">
                 <li class="nav-item active">
-                  <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                  <a class="nav-link" href="#projects">Projects</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Features</a>
+                  <a class="nav-link" href="#quote">Quote</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Pricing</a>
-                </li>
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Dropdown link
-                  </a>
-                  <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                    <a class="dropdown-item" href="#">Action</a>
-                    <a class="dropdown-item" href="#">Another action</a>
-                    <a class="dropdown-item" href="#">Something else here</a>
-                  </div>
+                  <a class="nav-link" href="#contact">Contact</a>
                 </li>
               </ul>
             </div>
           </nav>
-        <div class="header-container" id="home">
-            <a class="nav-link" href="#contact">
-                <img class="rocket-icon" src="img/rocket.svg" alt="rocket">
-            </a>
-                <!-- <ul class="nav justify-content-end disabled">
-                    <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#home">Home</a>
-                    </li>
-                    <li class="nav-item">
-                    <a class="nav-link" href="#projects">Projects</a>
-                    </li>
-                    <li class="nav-item">
-                    <a class="nav-link" href="#quote">Quote</a>
-                    </li>
-                    <li class="nav-item">
-                    <a class="nav-link" href="#contact">Contact</a>
-                    </li>
-                </ul> -->
-        </div>
     </header>
 
         <main class="projects container" id="projects">
@@ -123,7 +97,7 @@
                 </section>
             </main>
 
-            <aside class="quote">
+            <aside class="quote" id="quote">
                 <div class="card text-center shadow-lg p-3 mb-5 bg-body rounded">
                     <div class="card-header" style="text-align: start;">
                     Request a Quote!
@@ -131,18 +105,18 @@
                     <div class="card-body">
                     <h5 class="card-title">Have your next project in mind?</h5>
                     <p class="card-text">I provide free estimates to anyone who comes by the office to say hi!</p>
-                    <a class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Quote</a>
+                    <a class="btn btn-primary" id="quoteBtn" data-bs-toggle="modal" data-bs-target="#quoteModal">Quote</a>
                     </div>
                     <div class="card-footer text-muted" style="text-align: end">
                     Online requests are free too...
                     </div>
                 </div>
 
-                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal fade" id="quoteModal" tabindex="-1" role="dialog" aria-labelledby="quoteModalLabel" aria-hidden="true">
                     <div class="modal-dialog" role="document">
                     <div class="modal-content">
                         <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                        <h5 class="modal-title" id="quoteModalLabel">Modal title</h5>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>
@@ -178,7 +152,7 @@
             </ul>
             <p class="copyright">Copyright 2021, Goode Waye Designs&#174;</p>
           </footer>
-
+    <script src="script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
   </body>
 </html>
