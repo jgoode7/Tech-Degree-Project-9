@@ -10,7 +10,12 @@ header {
 }
 
 .navbar {
+    display: flex;
     opacity: .3;
+}
+
+.navbar-toggler-icon {
+    justify-content: end;
 }
 
 .header-container {
