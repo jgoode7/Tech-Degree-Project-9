@@ -6,6 +6,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Joe G's Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/styles.css">
@@ -15,7 +18,7 @@
     <header id="home">
         <nav class="navbar navbar-expand-md navbar-light bg-light">
             <a class="nav-link" href="#contact">
-                <img class="rocket-icon" src="img/rocket.svg" alt="rocket">
+                <img class="rocket-icon selector" src="img/rocket.svg" alt="rocket">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
@@ -100,7 +103,7 @@
             <aside class="quote" id="quote">
                 <div class="card text-center shadow-lg p-3 mb-5 bg-body rounded">
                     <div class="card-header" style="text-align: start;">
-                    Request a Quote!
+                    <h3>Request a Quote!</h3>
                     </div>
                     <div class="card-body">
                     <h5 class="card-title">Have your next project in mind?</h5>
@@ -116,13 +119,57 @@
                     <div class="modal-dialog" role="document">
                     <div class="modal-content">
                         <div class="modal-header">
-                        <h5 class="modal-title" id="quoteModalLabel">Modal title</h5>
+                        <h5 class="modal-title" id="quoteModalLabel">Quote</h5>
                         <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>
                         </div>
                         <div class="modal-body">
-                        ...
+                            <form>
+                                <div class="form-row">
+                                  <div class="form-group col-md-6">
+                                    <label for="inputEmail4">Name</label>
+                                    <input type="text" class="form-control" id="inputEmail4" placeholder="Name">
+                                  </div>
+                                  <div class="form-group col-md-6">
+                                    <label for="inputPassword4">Company</label>
+                                    <input type="text" class="form-control" id="inputPassword4" placeholder="Company">
+                                  </div>
+                                </div>
+                                <div class="form-group">
+                                  <label for="inputAddress">Domain</label>
+                                  <input type="text" class="form-control" id="inputAddress" placeholder="Current domain (if applicable)">
+                                </div>
+                                <div class="form-group">
+                                  <label for="inputEmail4">Email</label>
+                                  <input type="text" class="form-control" id="inputEmail4" placeholder="Email address">
+                                </div>
+                                <div class="form-row">
+                                    <div class="form-group col-md-6">
+                                      <label for="phone">Contact Number</label>
+                                      <input type="tel" class="form-control" id="phone" name="phone" placeholder="Your phone number">
+                                </div>
+                                  <div class="form-group col-md-4">
+                                    <label for="inputState">How did you hear about us?</label>
+                                    <select id="inputState" class="form-control">
+                                      <option selected>Choose...</option>
+                                      <option>Radio</option>
+                                      <option>Newsletter</option>  
+                                      <option>Search Engine</option>
+                                      <option>Social Media</option> 
+                                      <option>Refered By Someone</option>   
+                                    </select>
+                                  </div>
+                                </div>
+                                <div class="form-group">
+                                  <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                                    <label class="form-check-label" for="gridCheck">
+                                      Click if you're awesome, 10% off!
+                                    </label>
+                                  </div>
+                                </div>
+                              </form>
                         </div>
                         <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -152,7 +199,9 @@
             </ul>
             <p class="copyright">Copyright 2021, Goode Waye Designs&#174;</p>
           </footer>
+    
     <script src="script.js"></script>
+    <script src="sticky.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
   </body>
 </html>
